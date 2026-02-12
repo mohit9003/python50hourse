@@ -1,0 +1,2 @@
+
+print("alice",100)
