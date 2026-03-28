@@ -108,21 +108,104 @@
 # car2.start()
 
 
-class Person:
-    def __init__(self, name, age):
+# class Person:
+#     def __init__(self, name, age):
+#         self.name = name
+#         self.age = age
+
+
+# class Student(Person):
+#     def __init__(self, name, age, roll_no):
+#         super().__init__(name, age)
+#         self.roll_no = roll_no
+
+
+
+# s = Student("Mohit", 19, 101)
+
+# print("Name:", s.name)
+# print("Age:", s.age)
+# print("Roll No:", s.roll_no)
+
+
+
+#----------------------------------Revision OOPS----------------------------------------------
+
+# class BankAccount:
+#   def __init__(self,owner,balance):
+#     self.owner = owner
+#     self.__balance = balance
+
+#   def deposit(self,amount):
+#     self.__balance += amount
+
+#   def get_balance(self):
+#     return self.__balance
+  
+
+# acc = BankAccount("Alice",100000)
+# acc.deposit(5000)
+# print(acc.get_balance())
+
+
+
+# class Student:
+#     def __init__(self,subject,marks):
+#         self.subject = subject
+#         self.marks = marks
+
+# s1 = Student("Math", 99)
+# print(s1.subject,s1.marks) 
+
+
+# class Employee:
+#     def __init__(self,name,salary):
+#         self.name = name
+#         self.__salary = salary
+
+#     def deposite(self,amount):
+#         self.__salary += amount
+
+#     def get_salary(self):
+#         return self.__salary
+    
+# s = Employee("Alice", 55000)
+# print(s.get_salary())
+
+
+# class Mobile:
+#     def __init__(self,name,price):
+#         self.name = name
+#         self.__price = price
+
+#     def change_price(self,price):
+#         self.__price = price
+
+#     def get_price(self):
+#         return self.__price
+    
+# p = Mobile("Samsung" , 20000)
+# print(p.get_price())
+        
+
+# class Person:
+#     def __init__(self,name,age):
+#         self.name = name
+#         self.__age = age
+
+#     def shoe_age(self,age):
+#         self.__age = age
+
+#     def get_age(self):
+#         return self.__age
+    
+# p = Person("Alice" , 20)
+# print(p.get_age())
+        
+
+
+class Student:
+    def __init__(self,name,age):
         self.name = name
         self.age = age
 
-
-class Student(Person):
-    def __init__(self, name, age, roll_no):
-        super().__init__(name, age)
-        self.roll_no = roll_no
-
-
-
-s = Student("Mohit", 19, 101)
-
-print("Name:", s.name)
-print("Age:", s.age)
-print("Roll No:", s.roll_no)
